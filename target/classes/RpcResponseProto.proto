@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package com.sentinelcodes.datapipeline.protobuf;
+
+option java_package = "com.sentinelcodes.datapipeline.protobuf";
+option java_outer_classname = "RpcResponseProto";
+
+message RpcResponse {
+  string jsonrpc = 1;
+  int32 id = 2;
+  string result = 3;
+}

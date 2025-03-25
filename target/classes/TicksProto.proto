@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package com.sentinelcodes.datapipeline.protobuf;
+
+option java_package = "com.sentinelcodes.datapipeline.protobuf";
+option java_outer_classname = "TicksProto";
+
+message Ticks {
+  uint64 liquidityGross = 1;
+  uint64 liquidityNet = 2;
+  string feeGrowthOutside0X128 = 3;
+  string feeGrowthOutside1X128 = 4;
+  int64 tickCumulativeOutside = 5;
+  string secondsPerLiquidityOutsideX128 = 6;
+  uint32 secondsOutside = 7;
+  bool initialized = 8;
+}
